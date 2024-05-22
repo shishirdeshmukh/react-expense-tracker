@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Expense Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Expense Tracker App is a simple yet powerful tool that allows users to track their expenses and manage their budget. It includes features for adding, listing, and deleting expenses, as well as calculating the total amount spent and the remaining balance based on a user-defined budget.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Set Budget**: Users can set their total budget.
+- **Add Expenses**: Users can add expenses with details like amount and description.
+- **Delete Expenses**: Users can remove expenses from the list.
+- **Responsive Design**: The app is designed to be responsive and works well on different screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React**: The app is built using the React library for creating dynamic user interfaces.
+- **State Management**: `useState` hook is used to manage the state of the budget, amount spent, expenses, and budget input.
+- **Component-based Architecture**: The app is divided into functional components (`ExpenseForm`, `ExpenseList`) to keep the code modular and manageable.
+- **Bootstrap**: Bootstrap is used for styling and layout to create a responsive and visually appealing interface.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
 
-### `npm run build`
+### `App`
+The main component that maintains the overall state of the application including the budget, amount spent, and expenses. It also defines the methods to add and delete expenses.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `ExpenseForm`
+A component that renders the form for adding new expenses. It takes in props for the current budget and a callback function for adding expenses.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `ExpenseList`
+A component that displays the list of expenses and allows the user to delete individual expenses. It takes in props for the list of expenses and a callback function for deleting expenses.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Concepts Used
 
-### `npm run eject`
+- **React Functional Components**: The app uses functional components to create the UI.
+- **React Hooks**: `useState` hook is used for managing the state of the components.
+- **Props**: Props are used to pass data and functions between components.
+- **Event Handling**: Event handlers are used to manage user interactions such as form submissions and button clicks.
+- **Conditional Rendering**: Conditional rendering is used to display different UI elements based on the state.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
