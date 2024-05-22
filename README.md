@@ -12,6 +12,7 @@ The Expense Tracker App is a simple yet powerful tool that allows users to track
 - **Responsive Design**: The app is designed to be responsive and works well on different screen sizes.
 
 ## Project link
+https://shishirdeshmukh.github.io/react-expense-tracker/
 
 ## Technologies Used
 
